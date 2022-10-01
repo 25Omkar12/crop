@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- our code starts here -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predication.html">Predication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container">
+        <hr>
+        <h3>Based on pest we recommend pesticides</h3>
+        <hr>
+        <p>Please select the pest, so that we can recommend you, the pesticide accordingly!</p>
+        <form action="/pesticide" method="POST">
+            <div class="mb-3">
+                <label for="pest" class="form-label"><b>Select pest name </b></label>
+                <select
+                <input type="text" name="pest" placeholder="Select a pest" class="form-control" id="pest"
+                    required>
+                    <option selected>alphids</option>
+                    <option>armyworm</option>
+                    <option>beetle</option>
+                    <option>bollworm</option>
+                    <option>earthworm</option>
+                    <option>grasshopper</option>
+                    <option>mites</option>
+                    <option>mosquito</option>
+                    <option>sawfly</option>
+                    <option>steam borer</option>
+                </select>
+                <br>
+                <br>
+                <button type="submit" value="pest" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html

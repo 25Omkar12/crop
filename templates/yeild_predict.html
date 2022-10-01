@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- our code starts here -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predication.html">Predication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container">
+        <hr>
+        <h3>Lets have the production of your field....</h3> 
+        <hr>
+        <form action="/yeild" method="POST">
+            <div class="mb-3">
+              <label for="Area" class="form-label"><b>Area of field in Hector</b> </label>
+              <input type="number" step=".01" name="Area" class="form-control" id="Area" >
+            <div class="mb-3">
+              <label for="State" class="form-label"><b>State of field</b></label>
+              <select
+              <input type="text"  name="State" placeholder="Select a Season" class="form-control" id="State">
+              required>
+              <option selected>AndamanandNicobarIslands</option>
+                            <option>AndhraPradesh</option>
+                            <option>ArunachalPradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chandigarh </option>
+                            <option>Chhattisgarh</option>
+                            <option>DadraandNagarHaveli</option>
+                            <option>Goa</option>
+                            <option>Haryana</option>
+                            <option>Gujarat</option>
+                            <option>HimachalPradesh</option>
+                            <option>JammuandKashmir</option>
+                            <option>Jharkhand</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>MadhyaPradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                            <option>Meghalaya</option>
+                            <option>Mizoram</option>
+                            <option>Nagaland</option>
+                            <option>Odisha</option>
+                            <option>Puducherry</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>TamilNadu</option>
+                            <option>Telangana </option>
+                            <option>Tripura</option>
+                            <option>UttarPradesh</option>
+                            <option>WestBengal</option>
+            </select>
+
+            <div class="mb-3">
+              <label for="Season" class="form-label"><b>Season of Crop</b></label>
+              <select
+              <input type="text" name="Season" placeholder="Select a Season" class="form-control" id="Season">
+              required>
+              <option selected>Kharif</option>
+                            <option>WholeYear</option>
+                            <option>Autumn</option>
+                            <option>Rabi</option>
+                            <option>Summer</option>
+                            <option>Winter</option>
+            </select>
+            <div class="mb-3">
+              <label for="Crop" class="form-label"><b>Crop Name</b></label>
+              <select
+              <input type="text"  name="Crop" placeholder="Select a crop" 
+              class="form-control" id="Crop">
+              required>
+              <option selected>Arecanut</option>
+                            <option>OtherKharifpulses</option>
+                            <option>Rice</option>
+                            <option>Banana</option>
+                            <option>Cashewnut</option>
+                            <option>Coconut </option>
+                            <option>Dryginger</option>
+                            <option>Sugarcane</option>
+                            <option>Sweetpotato</option>
+                            <option>Tapioca</option>
+                            <option>Blackpepper</option>
+                            <option>Drychillies</option>
+                            <option>otheroilseeds</option>
+                            <option>Turmeric</option>
+                            <option>Maize</option>
+                            <option>Moong(GreenGram) </option>
+                            <option>Urad</option>
+                            <option>Arhar/Tur</option>
+                            <option>Groundnut</option>
+                            <option>Sunflower</option>
+                            <option>Bajra</option>
+                            <option>Castorseed</option>
+                            <option>Cotton(lint)</option>
+                            <option>Banana</option>
+                            <option>Horse-gram</option>
+                            <option>Jowar </option>
+                            <option>Korra</option>
+                            <option>Ragi</option>
+                            <option>Tobacco</option>
+                            <option>Tapioca</option>
+                            <option>Gram</option>
+                            <option>Wheat</option>
+                            <option>Masoor</option>
+                            <option>Sesamum</option>
+                            <option>Linseed</option>
+                            <option>Moong(GreenGram) </option>
+                            <option>Safflower</option>
+                            <option>Onion</option>
+                            <option>othermisc.pulses</option>
+                            <option>Samai</option>
+                            <option>Smallmillets</option>
+                            <option>Coriander</option>
+                            <option>Potato</option>
+                            <option>OtherRabipulses</option>
+                            <option>Soyabean</option>
+                            <option>Beans&Mutter(Vegetable) </option>
+                            <option>Bhindi</option>
+                            <option>Brinjal</option>
+                            <option>CitrusFruit</option>
+                            <option>Cucumber</option>
+                            <option>Grapes</option>
+                            <option>Mango</option>
+                            <option>Orange</option>
+                            <option>otherfibres</option>
+                            <option>OtherFreshFruits</option>
+                            <option>OtherVegetables</option>
+                            <option>Papaya</option>
+                            <option>PomeFruit</option>
+                            <option>Tomato</option>
+                            <option>Mesta</option>
+                            <option>Cowpea(Lobia)</option>
+                            <option>Lemon</option>
+                            <option>PomeGranet</option>
+                            <option>Sapota</option>
+                            <option>Horse-gram</option>
+                            <option>Cabbage </option>
+                            <option>Korra</option>
+                            <option>Rapeseed&Mustard</option>
+                            <option>Peas(vegetable)</option>
+                            <option>Nigerseed</option>
+                            <option>BottleGourd</option>
+                            <option>Varagu</option>
+                            <option>Garlic</option>
+                            <option>Ginger</option>
+                            <option>Oilseedstotal</option>
+                            <option>Pulsestotal </option>
+                            <option>Jute</option>
+                            <option>Peas&beans(Pulses)</option>
+                            <option>Blackgram</option>
+                            <option>Paddy</option>
+                            <option>Pineapple</option>
+                            <option>Barley</option>
+                            <option>Sannhamp</option>
+                            <option>Khesari</option>
+                            <option>Guarseed</option>
+                            <option>Moth</option>
+                            <option>OtherCereals&Millets</option>
+                            <option>Cond-spcsother</option>
+                            <option>Turnip</option>
+                            <option>Carrot</option>
+                            <option>Redish</option>
+                            <option>Arcanut(Processed)</option>
+                            <option>Atcanut(Raw)</option>
+                            <option>CashewnutProcessed</option>
+                            <option>CashewnutRaw</option>
+                            <option>Cardamom</option>
+                            <option>Rubber</option>
+                            <option>BitterGourd </option>
+                            <option>DrumStick</option>
+                            <option>JackFruit</option>
+                            <option>SnakGuard</option>
+                            <option>Nigerseed</option>
+                            <option>Tea</option>
+                            <option>Coffee</option>
+                            <option>Cauliflower</option>
+                            <option>OtherCitrusFruit</option>
+                            <option>WaterMelon</option>
+                            <option>Totalfoodgrain</option>
+                            <option>Kapas</option>
+                            <option>Colocosia</option>
+                            <option>Lentil</option>
+                            <option>Bean</option>
+                            <option>Jobster</option>
+                            <option>Perilla</option>
+                            <option>RajmashKholar</option>
+                            <option>Ricebean(nagadal))</option>
+                            <option>AshGourd</option>
+                            <option>BeetRoot</option>
+                            <option>Lab-Lab</option>
+                            <option>RibedGuard</option>
+                            <option>Yam </option>
+                            <option>PumpKin</option>
+                            <option>Apple</option>
+                            <option>Peach</option>
+                            <option>Pear</option>
+                            <option>Plums</option>
+                            <option>Litchi</option>
+                            <option>Ber</option>
+                            <option>OtherDryFruit</option>
+                            <option>Jute&mesta</option>
+            </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
